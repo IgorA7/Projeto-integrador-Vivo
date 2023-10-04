@@ -1,0 +1,96 @@
+/* Estilos gerais */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #939;
+  padding: 10px 20px;
+}
+
+header .logo img {
+  width: 30px;
+}
+
+header .menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+header .menu ul li {
+  margin-left: 20px;
+}
+
+header .menu ul li a {
+  text-decoration: none;
+  color: #fdfdfd;
+}
+
+/* Main */
+main {
+  flex-grow: 1;
+  padding: 20px 0;
+}
+
+.carrosel {
+  max-height: calc(100vh - (44px + 126px));
+  overflow-y: auto;
+}
+
+.carousel-indicators {
+  bottom: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(56, 142, 60, 0.8);
+  border-radius: 50%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #fdfdfd;
+}
+
+/* Footer */
+footer {
+  background-color: #388e3c;
+  padding: 20px;
+  color: #fdfdfd;
+  text-align: center;
+
+}
+
+footer .copy-menu a {
+  color: #fdfdfd;
+  text-decoration: none;
+  margin-left: 10px;
+  
+}

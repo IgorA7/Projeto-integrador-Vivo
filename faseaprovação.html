@@ -1,0 +1,41 @@
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+
+app.use(bodyParser.json());
+
+const database = [];
+
+// Endpoint para cadastrar informações
+app.post('/cadastro', (req, res) => {
+  const { Nome, CPF, telefone, Email, Planos, horas } = req.body;
+
+  // Validação dos campos
+  if (!Nome || !CPF || !telefone || !Email || !Planos || !horas) {
+    return res.status(400).json({ error: 'Todos os campos são obrigatórios' });
+  }
+
+  // Validação do CPF (coloque aqui sua lógica de validação do CPF)
+  // Validação do telefone (coloque aqui sua lógica de validação do telefone)
+  // Validação do email (coloque aqui sua lógica de validação do email)
+  // Validação dos Planos e horas (coloque aqui sua lógica de validação)
+
+  // Simule a inserção no banco de dados
+  const novoCadastro = {
+    nome,
+    CPF,
+    telefone,
+    email,
+    planos,
+    horas,
+    status: 'Pendente', // Status inicial do serviço
+  };
+  database.push(novoCadastro);
+
+  return res.status(201).json(novoCadastro);
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
+});

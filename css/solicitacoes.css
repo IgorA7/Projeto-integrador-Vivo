@@ -1,0 +1,102 @@
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, form, fieldset, legend, input, textarea, button, select {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin-bottom: 417px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer.footer {
+    margin-top: auto;
+}
+
+
+.formulario {
+    position: absolute;
+    top: 207px;
+    left: 750px;
+    width: 453px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 2px #B4B4B4;
+}
+
+.formulario-campo {
+    margin-bottom: 40px;
+    padding: 10px;
+    width: 300px;
+}
+
+.formulario-botao {
+    width: 288px;
+    height: 30px;
+    border-radius: 6px;
+    background-color: #388E3C;
+    color: white;
+    border: 1px;
+    cursor: pointer;
+    margin: -4px;
+}
+
+.formulario-titulo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    border: none;
+    color: #388E3C;
+}
+
+.titulo-form {
+    color: #939;
+    text-align: initial;
+    font-size: 44px;
+    font-weight: bold;
+}
+
+.text-area {
+    width: 50%;
+    float: left;
+    position: absolute;
+    top: 142px;
+    left: 93px;
+    color: #939;
+
+}
+
+.ptext {
+    font-size: 25px;
+    text-align: start;
+    margin: 22px;
+    width: 407px;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .text-area, .formulario {
+        display: block;
+    }
+}

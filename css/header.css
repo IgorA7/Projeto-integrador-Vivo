@@ -1,0 +1,8 @@
+body > header > div > nav > div {
+    color: #939;;
+}
+
+body > header > div > nav > div > ul {
+    justify-content: space-between;
+}
+
